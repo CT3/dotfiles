@@ -94,7 +94,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
 	bottom
 	brave
 	cargo
@@ -104,27 +103,28 @@
 	gh
 	gimp
 	git
+	gitui
+	gnumake
 	go
+	gradle
 	just
 	neovim
 	nodejs
+	notify-desktop
 	pkgs.vimPlugins.nvim-treesitter-parsers.vimdoc
 	python3
 	ripgrep
 	rm-improved
 	rustup
 	slack
+	sqlite
+	typescript
 	unzip
 	wezterm
 	wget
 	zellij
 	zig
 	zoxide
-	notify-desktop
-	gradle
-	gitui
-	typescript
-	gnumake
   ];
 
 fonts.packages = with pkgs; [
