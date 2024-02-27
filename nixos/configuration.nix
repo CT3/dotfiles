@@ -133,6 +133,7 @@
 	stylua
 	thunderbird
 	zoom-us
+	flameshot
   ];
 
 fonts.packages = with pkgs; [
