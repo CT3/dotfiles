@@ -131,7 +131,6 @@
 	zig
 	zoxide
 	stylua
-	himalaya
   ];
 
 fonts.packages = with pkgs; [
