@@ -131,6 +131,7 @@
 	zig
 	zoxide
 	stylua
+	thunderbird
   ];
 
 fonts.packages = with pkgs; [
