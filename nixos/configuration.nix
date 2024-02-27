@@ -122,6 +122,7 @@
 	zoxide
 	notify-desktop
 	gradle
+	gitui
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
