@@ -132,6 +132,7 @@
 	zoxide
 	stylua
 	thunderbird
+	zoom-us
   ];
 
 fonts.packages = with pkgs; [
