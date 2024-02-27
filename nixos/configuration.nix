@@ -127,6 +127,7 @@
 	zig
 	zoxide
 	eza
+	starship
   ];
 
 fonts.packages = with pkgs; [
