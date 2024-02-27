@@ -7,4 +7,3 @@
   git commit -am "$current"
   notify-desktop "Nix OS Rebuilt OK"
 
-
