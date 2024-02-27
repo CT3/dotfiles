@@ -131,6 +131,7 @@
 	zig
 	zoxide
 	stylua
+gnomeExtensions.gsconnect
   ];
 
 fonts.packages = with pkgs; [
