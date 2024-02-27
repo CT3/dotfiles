@@ -131,7 +131,7 @@
 	zig
 	zoxide
 	stylua
-gnomeExtensions.gsconnect
+	himalaya
   ];
 
 fonts.packages = with pkgs; [
