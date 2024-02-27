@@ -98,6 +98,8 @@
 	bottom
 	brave
 	cargo
+	dotter
+	eza
 	fd
 	fish
 	gcc_multi
@@ -119,6 +121,7 @@
 	rustup
 	slack
 	sqlite
+	starship
 	typescript
 	unzip
 	wezterm
@@ -126,8 +129,6 @@
 	zellij
 	zig
 	zoxide
-	eza
-	starship
   ];
 
 fonts.packages = with pkgs; [
