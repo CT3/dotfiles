@@ -137,6 +137,15 @@
 	obsidian
   ];
 
+
+    {
+              nixpkgs.config.permittedInsecurePackages = [
+                "electron-25.9.0"
+              ];
+            }
+
+
+
 fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
 ];
