@@ -129,6 +129,7 @@
 	zellij
 	zig
 	zoxide
+	stylua
   ];
 
 fonts.packages = with pkgs; [
