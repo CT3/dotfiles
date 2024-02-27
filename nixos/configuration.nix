@@ -126,6 +126,7 @@
 	zellij
 	zig
 	zoxide
+	eza
   ];
 
 fonts.packages = with pkgs; [
