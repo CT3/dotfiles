@@ -136,7 +136,7 @@
 	flameshot
 	prusa-slicer
 electron
-
+obsidian	
   ];
 
 
