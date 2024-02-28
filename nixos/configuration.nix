@@ -134,6 +134,7 @@
 	thunderbird
 	zoom-us
 	flameshot
+	prusa-slicer
   ];
 
 
