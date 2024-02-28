@@ -135,6 +135,8 @@
 	zoom-us
 	flameshot
 	prusa-slicer
+	obsidian
+
   ];
 
 
