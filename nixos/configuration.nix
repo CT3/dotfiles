@@ -120,9 +120,11 @@
 	pkgs.vimPlugins.nvim-treesitter-parsers.vimdoc
 	prusa-slicer
 	python3
+	qmk
 	ripgrep
 	rm-improved
 	rustup
+	saleae-logic
 	slack
 	sqlite
 	starship
@@ -138,7 +140,6 @@
 	zoom-us
 	zoxide
    	nixpkgs-fmt 
-	qmk
   ];
 
 
