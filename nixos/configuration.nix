@@ -138,6 +138,7 @@
 	zoom-us
 	zoxide
    	nixpkgs-fmt 
+	qmk
   ];
 
 
