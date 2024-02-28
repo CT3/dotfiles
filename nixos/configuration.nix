@@ -124,7 +124,7 @@
 	ripgrep
 	rm-improved
 	rustup
-	saleae-logic
+	saleae-logic-2
 	slack
 	sqlite
 	starship
