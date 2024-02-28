@@ -91,6 +91,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -139,11 +140,6 @@ electron
 obsidian	
   ];
 
-{
-nixpkgs.config.permittedInsecurePackages = [
-                "electron-25.9.0"
-              ];
-            }
 
 fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
