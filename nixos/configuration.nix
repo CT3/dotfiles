@@ -103,6 +103,7 @@
 	eza
 	fd
 	fish
+	flameshot
 	gcc_multi
 	gh
 	gimp
@@ -115,7 +116,9 @@
 	neovim
 	nodejs
 	notify-desktop
+	obsidian	
 	pkgs.vimPlugins.nvim-treesitter-parsers.vimdoc
+	prusa-slicer
 	python3
 	ripgrep
 	rm-improved
@@ -123,21 +126,18 @@
 	slack
 	sqlite
 	starship
+	stylua
+	syncthing
+	thunderbird
 	typescript
 	unzip
 	wezterm
 	wget
 	zellij
-   	nixpkgs-fmt 
 	zig
-	zoxide
-	stylua
-	thunderbird
 	zoom-us
-	flameshot
-	prusa-slicer
-electron
-obsidian	
+	zoxide
+   	nixpkgs-fmt 
   ];
 
 
