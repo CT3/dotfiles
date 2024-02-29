@@ -75,7 +75,7 @@
     description = "Mantas";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    #  thunderbird
+      nano
     ];
   };
 
