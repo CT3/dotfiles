@@ -140,8 +140,8 @@
 	zoom-us
 	zoxide
    	nixpkgs-fmt 
+	xclip
   ];
-
 
 fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" ]; })
