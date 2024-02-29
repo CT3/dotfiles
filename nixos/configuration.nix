@@ -139,6 +139,7 @@
 	zig
 	zoom-us
 	zoxide
+blisp
    	nixpkgs-fmt 
   ];
 
