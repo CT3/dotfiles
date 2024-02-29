@@ -144,7 +144,7 @@
 
 
 fonts.packages = with pkgs; [
-  (nerdfonts.override { fonts = [ "FiraCode" "Hackfont" ]; })
+  (nerdfonts.override { fonts = [ "FiraCode" ]; })
 ];
 
   # Some programs need SUID wrappers, can be configured further or are
