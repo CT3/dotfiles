@@ -9,8 +9,13 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
+  # Laptops
+  services.thermald.enable = true;
+  powerManagement.powertop.enable = true;
+  #services.tlp.enable = true;
 
-  # Bootloader.
+
+ # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
