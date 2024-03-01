@@ -144,6 +144,7 @@
 	zig
 	zoom-us
 	zoxide
+	arduino-cli
    	nixpkgs-fmt 
 	xclip
 	gparted
