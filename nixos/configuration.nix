@@ -147,7 +147,6 @@
 	arduino-cli
    	nixpkgs-fmt 
 	xclip
-	devbox
 	gparted
   ];
 
