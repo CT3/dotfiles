@@ -155,7 +155,7 @@ fonts.packages = with pkgs; [
 ];
 
 
-in pkgs.mkShell {
+pkgs.mkShell {
   packages = [
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas
