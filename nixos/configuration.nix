@@ -153,6 +153,19 @@
 fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" ]; })
 ];
+let
+  pkgs = import <nixpkgs> {};
+in pkgs.mkShell {
+  packages = [
+    (pkgs.python3.withPackages (python-pkgs: [
+      python-pkgs.pandas
+      python-pkgs.requests
+      python-pkgs.pyserial
+    ]))
+  ];
+}
+
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
