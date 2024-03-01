@@ -145,7 +145,7 @@
 	zoom-us
 	zoxide
    	nixpkgs-fmt 
-	arduino
+	arduino-2
 	xclip
 	gparted
   ];
