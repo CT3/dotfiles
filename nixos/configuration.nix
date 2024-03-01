@@ -79,7 +79,7 @@
   users.users.mantas = {
     isNormalUser = true;
     description = "Mantas";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" ];
     packages = with pkgs; [
     ];
   };
