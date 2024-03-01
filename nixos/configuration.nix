@@ -147,6 +147,7 @@
 	arduino-cli
    	nixpkgs-fmt 
 	xclip
+	devbox
 	gparted
   ];
 
@@ -154,16 +155,6 @@ fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" ]; })
 ];
 
-
-pkgs.mkShell {
-  packages = [
-    (pkgs.python3.withPackages (python-pkgs: [
-      python-pkgs.pandas
-      python-pkgs.requests
-      python-pkgs.pyserial
-    ]))
-  ];
-}
 
 
 
