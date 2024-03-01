@@ -148,6 +148,7 @@
    	nixpkgs-fmt 
 	xclip
 	gparted
+	sabnzbd
   ];
 
 fonts.packages = with pkgs; [
