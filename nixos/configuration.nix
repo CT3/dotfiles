@@ -146,6 +146,7 @@
 	zoxide
    	nixpkgs-fmt 
 	xclip
+	gparte
   ];
 
 fonts.packages = with pkgs; [
