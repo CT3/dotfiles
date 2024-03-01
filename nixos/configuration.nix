@@ -140,7 +140,6 @@
 	unzip
 	wezterm
 	wget
-	arduino-ide
 	zellij
 	zig
 	zoom-us
