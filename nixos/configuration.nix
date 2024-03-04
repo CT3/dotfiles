@@ -80,7 +80,7 @@
   users.users.mantas = {
     isNormalUser = true;
     description = "Mantas";
-    extraGroups = [ "networkmanager" "wheel" "dialout" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "vboxusers" ];
     packages = with pkgs; [
     ];
   };
@@ -158,7 +158,7 @@ fonts.packages = with pkgs; [
   # Enable virtualbox. Ref <https://nixos.wiki/wiki/Virtualbox>
   virtualisation.virtualbox.host.enable = true;
   virtualisation.virtualbox.host.enableExtensionPack = true;
-  users.extraGroups.vboxusers.members = [ "Mantas" ];
+  users.extraGroups.vboxusers.members = [ "mantas" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
