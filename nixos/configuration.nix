@@ -127,7 +127,6 @@
 	pkgs.vimPlugins.nvim-treesitter-parsers.vimdoc
 	prusa-slicer
 	python3
-	qbittorrent
 	qmk
 	ripgrep
 	rm-improved
