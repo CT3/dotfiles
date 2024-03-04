@@ -122,6 +122,9 @@
 	gradle
 	just
 	neovim
+	nrfutil
+	segger-ozone
+	libjaylink
 	nodejs
 	notify-desktop
 	obsidian	
