@@ -109,6 +109,7 @@
 	eza
 	fd
 	fish
+	kicad
 	flameshot
 	gcc_multi
 	gh
