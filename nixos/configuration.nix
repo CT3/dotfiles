@@ -127,11 +127,12 @@
 	pkgs.vimPlugins.nvim-treesitter-parsers.vimdoc
 	prusa-slicer
 	python3
+	qbittorrent
 	qmk
 	ripgrep
 	rm-improved
 	rustup
-	sabnzbd
+	#sabnzbd
 	saleae-logic-2
 	slack
 	sqlite
