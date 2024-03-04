@@ -94,7 +94,8 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
   nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
 
   # List packages installed in system profile. To search, run:
