@@ -15,7 +15,7 @@
   powerManagement.powertop.enable = true;
   #services.tlp.enable = true;
 
-
+  environment.variables.EDITOR = "nvim";
  # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
