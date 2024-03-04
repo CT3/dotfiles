@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
     ];
   # Laptops
+  powerManagement.enable = true;
   services.thermald.enable = true;
   powerManagement.powertop.enable = true;
   #services.tlp.enable = true;
