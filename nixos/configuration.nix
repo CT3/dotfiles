@@ -46,7 +46,7 @@
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "gb";
+    layout = "us";
     xkbVariant = "";
   };
 
@@ -162,7 +162,6 @@ fonts.packages = with pkgs; [
   # Enable virtualbox. Ref <https://nixos.wiki/wiki/Virtualbox>
   virtualisation.virtualbox.host.enable = true;
   virtualisation.virtualbox.host.enableExtensionPack = true;
-  virtualisation.virtualbox.guest.enable = true;
   users.extraGroups.vboxusers.members = [ "mantas" ];
 
   # Some programs need SUID wrappers, can be configured further or are
