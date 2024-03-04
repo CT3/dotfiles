@@ -99,8 +99,8 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
+	arduino-cli
 	bat
-	vlc
 	blisp
 	bottom
 	brave
@@ -117,6 +117,7 @@
 	gitui
 	gnumake
 	go
+	gparted
 	gradle
 	just
 	neovim
@@ -130,6 +131,7 @@
 	ripgrep
 	rm-improved
 	rustup
+	sabnzbd
 	saleae-logic-2
 	slack
 	sqlite
@@ -139,25 +141,23 @@
 	thunderbird
 	typescript
 	unzip
+	vlc
 	wezterm
 	wget
+	xclip
 	zellij
 	zig
 	zoom-us
 	zoxide
-	arduino-cli
    	nixpkgs-fmt 
-	xclip
-	gparted
-	sabnzbd
   ];
 
 fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" ]; })
 ];
-
-
-
+  # Enable virtualbox. Ref <https://nixos.wiki/wiki/Virtualbox>
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "Mantas" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -178,12 +178,6 @@ fonts.packages = with pkgs; [
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
 
 }

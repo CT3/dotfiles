@@ -12,5 +12,4 @@ eval (zellij setup --generate-auto-start fish | string collect)
     #a
     alias vi="nvim"
     alias cd="z"
-    # alias weather ="curl v2d.wttr.in"
 end
