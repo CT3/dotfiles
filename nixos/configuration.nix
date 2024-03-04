@@ -94,8 +94,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
   nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
 
   # List packages installed in system profile. To search, run:
@@ -158,6 +156,7 @@ fonts.packages = with pkgs; [
 ];
   # Enable virtualbox. Ref <https://nixos.wiki/wiki/Virtualbox>
   virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
   users.extraGroups.vboxusers.members = [ "Mantas" ];
 
   # Some programs need SUID wrappers, can be configured further or are
