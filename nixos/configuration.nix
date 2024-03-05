@@ -15,6 +15,8 @@
   powerManagement.powertop.enable = true;
   #services.tlp.enable = true;
 
+
+  hardware.logitech.wireless.enable #Logitec mouse solaar
   environment.variables.EDITOR = "nvim";
  # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -22,7 +24,6 @@
 
   networking.hostName = "nixos"; # Define your hostname.
   #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -99,6 +100,7 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
+	#sabnzbd
 	arduino-cli
 	bat
 	blisp
@@ -109,7 +111,6 @@
 	eza
 	fd
 	fish
-	kicad
 	flameshot
 	gcc_multi
 	gh
@@ -121,13 +122,13 @@
 	gparted
 	gradle
 	just
-	neovim
-	nrfutil
-	segger-ozone
+	kicad
 	libjaylink
+	neovim
 	nodejs
 	notify-desktop
-	obsidian	
+	nrfutil
+	obsidian
 	pkgs.vimPlugins.nvim-treesitter-parsers.vimdoc
 	prusa-slicer
 	python3
@@ -135,8 +136,8 @@
 	ripgrep
 	rm-improved
 	rustup
-	#sabnzbd
 	saleae-logic-2
+	segger-ozone
 	slack
 	sqlite
 	starship
@@ -153,7 +154,7 @@
 	zig
 	zoom-us
 	zoxide
-   	nixpkgs-fmt 
+   	nixpkgs-fmt
   ];
 
 fonts.packages = with pkgs; [
