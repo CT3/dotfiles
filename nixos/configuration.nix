@@ -137,7 +137,7 @@
 	ripgrep
 	rm-improved
 	rustup
-	saleae-logic-2
+	#saleae-logic-2
 	segger-ozone
 	slack
 	sqlite
