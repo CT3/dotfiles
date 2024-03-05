@@ -16,7 +16,7 @@
   #services.tlp.enable = true;
 
 
-  hardware.logitech.wireless.enable;#Logitec mouse solaar
+  hardware.logitech.wireless.enable = true;#Logitec mouse solaar
   
   environment.variables.EDITOR = "nvim";
  # Bootloader.
