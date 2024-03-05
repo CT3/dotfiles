@@ -162,9 +162,9 @@ fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" ]; })
 ];
   # Enable virtualbox. Ref <https://nixos.wiki/wiki/Virtualbox>
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
-  users.extraGroups.vboxusers.members = [ "mantas" ];
+#  virtualisation.virtualbox.host.enable = true;
+#  virtualisation.virtualbox.host.enableExtensionPack = true;
+#  users.extraGroups.vboxusers.members = [ "mantas" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
