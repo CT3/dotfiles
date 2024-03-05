@@ -137,7 +137,7 @@
 	ripgrep
 	rm-improved
 	rustup
-	saleae-logic-2
+#	saleae-logic-2
 	segger-ozone
 	slack
 	sqlite
@@ -157,6 +157,15 @@
 	zoxide
    	nixpkgs-fmt
   ];
+
+
+let
+  unstable = import <nixos-unstable> {};
+in {
+  environment.systemPackages = [ unstable.saleae-logic-2 ];
+}
+
+
 
 fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" ]; })
