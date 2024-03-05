@@ -82,7 +82,7 @@
   users.users.mantas = {
     isNormalUser = true;
     description = "Mantas";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "vboxusers" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "vboxusers" "plugdev"];
     packages = with pkgs; [
     ];
   };
@@ -137,7 +137,7 @@
 	ripgrep
 	rm-improved
 	rustup
-#	saleae-logic-2
+	saleae-logic-2
 	segger-ozone
 	slack
 	sqlite
@@ -158,12 +158,6 @@
    	nixpkgs-fmt
   ];
 
-
-let
-  unstable = import <nixos-unstable> {};
-in {
-  environment.systemPackages = [ unstable.saleae-logic-2 ];
-}
 
 
 
