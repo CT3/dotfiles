@@ -10,14 +10,15 @@
       ./hardware-configuration.nix
     ];
   # Laptops
- # powerManagement.enable = true;
-  #services.thermald.enable = true;
-#  powerManagement.powertop.enable = true;
+ powerManagement.enable = true;
+  services.thermald.enable = true;
+   powerManagement.powertop.enable = true;
   #services.tlp.enable = true;
 
 
   hardware.logitech.wireless.enable = true;#Logitec mouse solaar
- hardware.saleae-logic.enable = true;
+  hardware.saleae-logic.enable = true;
+
   environment.variables.EDITOR = "nvim";
  # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -165,9 +166,9 @@ fonts.packages = with pkgs; [
   (nerdfonts.override { fonts = [ "FiraCode" ]; })
 ];
   # Enable virtualbox. Ref <https://nixos.wiki/wiki/Virtualbox>
-#  virtualisation.virtualbox.host.enable = true;
-#  virtualisation.virtualbox.host.enableExtensionPack = true;
-#  users.extraGroups.vboxusers.members = [ "mantas" ];
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
+  users.extraGroups.vboxusers.members = [ "mantas" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
