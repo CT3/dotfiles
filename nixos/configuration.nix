@@ -17,7 +17,7 @@
 
 
   hardware.logitech.wireless.enable = true;#Logitec mouse solaar
-  
+ hardware.saleae-logic.enable = true;
   environment.variables.EDITOR = "nvim";
  # Bootloader.
   boot.loader.systemd-boot.enable = true;
