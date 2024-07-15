@@ -1,0 +1,45 @@
+eval "$(starship init zsh)"
+# User configuration
+eval "$(zoxide init zsh)"
+# export MANPATH="/usr/local/man:$MANPATH"
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-you-should-use/zsh-you-should-use.plugin.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/.zsh/zsh-command-not-found/command-not-found.plugin.zsh
+#
+command_not_found_handler() {
+  if command -v suggest-command-not-found &> /dev/null; then
+    exec suggest-command-not-found $@
+  else
+    echo "zsh: command not found: $@"
+  fi
+}
+# You may need to manually set your language environment
+ export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='nvim'
+ else
+   export EDITOR='vi'
+ fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
+# For a full list of active aliases, run `alias`.
+alias vi="nvim"
+alias cd="z"
+alias weather="curl v2d.wttr.in/klaipeda"
+alias ls="exa"
+
+if [ -z "$ZELLIJ" ] || [ "$ZELLIJ" != 0 ]; then
+    zellij attach usual
+fi
+# Example aliases
+# alias zshconfig="vi ~/.zshrc"
