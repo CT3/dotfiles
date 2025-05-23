@@ -147,3 +147,4 @@ eval "$(starship init bash)"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/mantas/.cache/lm-studio/bin"
+export GEMINI_API_KEY="AIzaSyCtAE3XbgIi30UTRaanKOzs3AovBa9QwnM"

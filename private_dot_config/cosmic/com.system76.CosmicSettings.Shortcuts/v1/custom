@@ -1,0 +1,43 @@
+{
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "t",
+    ): Workspace(4),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "r",
+    ): Workspace(2),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "l",
+    ): System(Launcher),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "s",
+    ): Workspace(3),
+    (
+        modifiers: [
+            Super,
+        ],
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "slash",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "a",
+    ): Workspace(1),
+}

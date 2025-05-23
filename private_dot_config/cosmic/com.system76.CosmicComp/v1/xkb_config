@@ -1,0 +1,7 @@
+(
+    rules: "",
+    model: "",
+    layout: "lt,us,lt,us",
+    variant: "us,altgr-intl,std,",
+    options: Some(",lv3:alt_switch"),
+)
